@@ -1,4 +1,4 @@
-/* HTML5 Reset *Debug* stylesheet 
+/* HTML5 Reset *Debug* stylesheet
 Author: 		John Dyer (http://johndyer.me/)
 Description: 	Makes Firebug and WebKit usable,
 				Just be sure to switch to a compacted, minified version for launch
@@ -17,7 +17,7 @@ html {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
-} 
+}
 body {
 	margin: 0;
 	padding: 0;
@@ -27,7 +27,7 @@ body {
 	vertical-align: baseline;
 	background: transparent;
 	line-height:1;
-} 
+}
 div {
 	margin: 0;
 	padding: 0;
@@ -36,7 +36,7 @@ div {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
-} 
+}
 span {
 	margin: 0;
 	padding: 0;
@@ -45,7 +45,7 @@ span {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
-} 
+}
 applet {
 	margin: 0;
 	padding: 0;
@@ -54,7 +54,7 @@ applet {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
-} 
+}
 object {
 	margin: 0;
 	padding: 0;
@@ -63,7 +63,7 @@ object {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
-} 
+}
 iframe {
 	margin: 0;
 	padding: 0;
@@ -81,7 +81,7 @@ h1 {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
-} 
+}
 h2 {
 	margin: 0;
 	padding: 0;
@@ -90,7 +90,7 @@ h2 {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
-} 
+}
 h3 {
 	margin: 0;
 	padding: 0;
@@ -99,7 +99,7 @@ h3 {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
-} 
+}
 h4 {
 	margin: 0;
 	padding: 0;
@@ -108,7 +108,7 @@ h4 {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
-} 
+}
 h5 {
 	margin: 0;
 	padding: 0;
@@ -117,7 +117,7 @@ h5 {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
-} 
+}
 h6 {
 	margin: 0;
 	padding: 0;
@@ -126,7 +126,7 @@ h6 {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
-} 
+}
 p {
 	margin: 0;
 	padding: 0;
@@ -135,7 +135,7 @@ p {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
-} 
+}
 blockquote {
 	margin: 0;
 	padding: 0;
@@ -145,11 +145,11 @@ blockquote {
 	vertical-align: baseline;
 	background: transparent;
 	quotes: none;
-} 
+}
 blockquote:before {
 	content: '';
 	content: none;
-} 
+}
 blockquote:after {
 	content: '';
 	content: none;
@@ -171,7 +171,7 @@ a {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
-} 
+}
 abbr {
 	margin: 0;
 	padding: 0;
@@ -180,7 +180,7 @@ abbr {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
-} 
+}
 acronym {
 	margin: 0;
 	padding: 0;
@@ -189,7 +189,7 @@ acronym {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
-} 
+}
 address {
 	margin: 0;
 	padding: 0;
@@ -198,7 +198,7 @@ address {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
-} 
+}
 big {
 	margin: 0;
 	padding: 0;
@@ -207,7 +207,7 @@ big {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
-} 
+}
 cite {
 	margin: 0;
 	padding: 0;
@@ -216,7 +216,7 @@ cite {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
-} 
+}
 code {
 	margin: 0;
 	padding: 0;
@@ -235,7 +235,7 @@ del {
 	vertical-align: baseline;
 	background: transparent;
 	text-decoration: line-through;
-} 
+}
 dfn {
 	margin: 0;
 	padding: 0;
@@ -244,7 +244,7 @@ dfn {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
-} 
+}
 em {
 	margin: 0;
 	padding: 0;
@@ -253,7 +253,7 @@ em {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
-} 
+}
 font {
 	margin: 0;
 	padding: 0;
@@ -262,7 +262,7 @@ font {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
-} 
+}
 img {
 	margin: 0;
 	padding: 0;
@@ -271,7 +271,7 @@ img {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
-} 
+}
 ins {
 	margin: 0;
 	padding: 0;
@@ -281,7 +281,7 @@ ins {
 	vertical-align: baseline;
 	background: transparent;
 	text-decoration: none;
-} 
+}
 kbd {
 	margin: 0;
 	padding: 0;
@@ -290,7 +290,7 @@ kbd {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
-} 
+}
 q {
 	margin: 0;
 	padding: 0;
@@ -304,7 +304,7 @@ q {
 q:before {
 	content: '';
 	content: none;
-} 
+}
 q:after {
 	content: '';
 	content: none;
@@ -317,7 +317,7 @@ s {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
-} 
+}
 samp {
 	margin: 0;
 	padding: 0;
@@ -335,7 +335,7 @@ small {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
-} 
+}
 strike {
 	margin: 0;
 	padding: 0;
@@ -344,7 +344,7 @@ strike {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
-} 
+}
 strong {
 	margin: 0;
 	padding: 0;
@@ -353,7 +353,7 @@ strong {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
-} 
+}
 sub {
 	margin: 0;
 	padding: 0;
@@ -362,7 +362,7 @@ sub {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
-} 
+}
 sup {
 	margin: 0;
 	padding: 0;
@@ -371,7 +371,7 @@ sup {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
-} 
+}
 tt {
 	margin: 0;
 	padding: 0;
@@ -380,7 +380,7 @@ tt {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
-} 
+}
 var {
 	margin: 0;
 	padding: 0;
@@ -398,7 +398,7 @@ b {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
-} 
+}
 u {
 	margin: 0;
 	padding: 0;
@@ -407,7 +407,7 @@ u {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
-} 
+}
 i {
 	margin: 0;
 	padding: 0;
@@ -416,7 +416,7 @@ i {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
-} 
+}
 center {
 	margin: 0;
 	padding: 0;
@@ -434,7 +434,7 @@ dl {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
-} 
+}
 dt {
 	margin: 0;
 	padding: 0;
@@ -443,7 +443,7 @@ dt {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
-} 
+}
 dd {
 	margin: 0;
 	padding: 0;
@@ -452,7 +452,7 @@ dd {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
-} 
+}
 ol {
 	margin: 0;
 	padding: 0;
@@ -462,7 +462,7 @@ ol {
 	vertical-align: baseline;
 	background: transparent;
 	list-style: none;
-} 
+}
 ul {
 	margin: 0;
 	padding: 0;
@@ -472,7 +472,7 @@ ul {
 	vertical-align: baseline;
 	background: transparent;
 	list-style: none;
-} 
+}
 li {
 	margin: 0;
 	padding: 0;
@@ -490,7 +490,7 @@ fieldset {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
-} 
+}
 form {
 	margin: 0;
 	padding: 0;
@@ -499,7 +499,7 @@ form {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
-} 
+}
 label {
 	margin: 0;
 	padding: 0;
@@ -508,7 +508,7 @@ label {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
-} 
+}
 legend {
 	margin: 0;
 	padding: 0;
@@ -528,7 +528,7 @@ table {
 	background: transparent;
 	border-collapse: collapse;
 	border-spacing: 0;
-} 
+}
 caption {
 	margin: 0;
 	padding: 0;
@@ -537,7 +537,7 @@ caption {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
-} 
+}
 tbody {
 	margin: 0;
 	padding: 0;
@@ -546,7 +546,7 @@ tbody {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
-} 
+}
 tfoot {
 	margin: 0;
 	padding: 0;
@@ -555,7 +555,7 @@ tfoot {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
-} 
+}
 thead {
 	margin: 0;
 	padding: 0;
@@ -564,7 +564,7 @@ thead {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
-} 
+}
 tr {
 	margin: 0;
 	padding: 0;
@@ -573,7 +573,7 @@ tr {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
-} 
+}
 th {
 	margin: 0;
 	padding: 0;
@@ -582,7 +582,7 @@ th {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
-} 
+}
 td {
 	margin: 0;
 	padding: 0;
@@ -740,7 +740,7 @@ mark {
 	outline: 0;
 	font-size: 100%;
 	vertical-align: baseline;
-	background: transparent;	
+	background: transparent;
 }
 audio {
 	margin: 0;
@@ -772,7 +772,7 @@ select {
 hr {
     display:block;
     height:1px;
-    border:0;   
+    border:0;
     border-top:1px solid #cccccc;
     margin:1em 0;
     padding:0;
