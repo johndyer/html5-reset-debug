@@ -1,14 +1,14 @@
-# De-Compacted Version of HTML Reset CSS
+# De-Compacted Version of HTML5 Reset CSS
 
 * Author: [John Dyer](http://johndyer.name/)
 * License: GPLv2/MIT
 
 ## Why
 
-HTML Reset, originally by Eric Meyer(http://meyerweb.com/eric/tools/css/reset/), is awesome.
+HTML Reset, originally by [Eric Meyer](http://meyerweb.com/eric/tools/css/reset/) 
+and given HTML5 updates by folks like [Richard Clark](http://html5doctor.com/html-5-reset-stylesheet/), is awesome.
 
-But it makes tools like Firebug, WebKit inspector, IE Developer Tools, and Opera Dragonfly very hard to use.
-
+But it makes tools like Firebug, WebKit inspector, IE Developer Tools, and Opera Dragonfly very hard to use. 
 HTML Reset *Debug* makes site development easier by listing each selector only once and explicitly defining all CSS properties and values. 
 Once your site is built, you can switch to a compact, minified version of your choice.
 
