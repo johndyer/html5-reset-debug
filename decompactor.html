@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Reset De-Compactor</title>
+	<style>
+	table {
+		width: 100%;
+	}
+	table thead th {
+		width: 45%;
+	}
+	table td {
+		text-align: center;
+	}
+	textarea {
+		width: 100%;
+		height: 300px;
+	}
+	</style>
+</head>
+<body>
+	<h1>CSS De-Compactor</h1>
+	<p>Useful for debugging with CSS reset files</p>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Original CSS</th>
+				<td></td>
+				<th>De-Compacted</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<textarea id="original"></textarea>
+					<br/>
+					<span id="original-size"></span>					
+				</td>
+				<td>	
+					<input type="button" id="convert" value="Convert &gt;&gt;" />
+					<br />
+					<input type="checkbox" id="alphabetize" checked="checked" /><label for="alphabetize">Alphabetize</label>
+				</td>
+				<td>
+					<textarea id="converted"></textarea>
+					<br/>
+					<span id="converted-size"></span>
+				</td>
+			</tr>
+		<tbody>
+	</table>
+<script>
+
+var 
+	selectorMatch = new RegExp(/([^{]+)\{([^}]+)}/gi),
+	$ = function(id) {
+		return document.getElementById(id);
+	};
+
+$('original').onchange = function() {
+	$('original-size').innerHTML = $('original').value.length;
+}
+
+$('convert').onclick = function() {
+	
+	var selectorBlocks, 
+		selectorBlock,
+		selectorBlockMatch,
+		selectorStrings, 
+		selectorString,
+		uniqueSelectors = [],	
+		uniqueSelectorValues = {},		
+		i,
+		il,
+		alphabetize = $('alphabetize').checked,
+		original = $('original').value,
+		expanded;
+	
+	// remove comments
+	expanded = original.replace(/\/\*[^\/\*]+\*\//gi, '');
+
+	
+	// go through each selector block
+	while ((selectorBlockMatch = selectorMatch.exec(expanded)) != null)  {  
+		selectorBlock = selectorBlockMatch[1];
+		values = '\t' + trim(selectorBlockMatch[2]);
+		
+		// split the block (html, body,) into unique selectors
+		selectorStrings = selectorBlock.split(',');
+		for (i=0, il=selectorStrings.length; i<il; i++) {
+		
+			// add the css properties from this block to the unique selector 
+			selectorString = trim(selectorStrings[i]);
+			
+			if (selectorString != '') {
+				if (uniqueSelectorValues[selectorString] != null) {
+					uniqueSelectorValues[selectorString] += '\n' + values;
+				} else {
+					uniqueSelectorValues[selectorString] = values;
+					uniqueSelectors.push(selectorString);
+				}
+			}
+		}
+	} 
+	
+	// build de-compacted version
+	expanded = '/* expanded version */\n\n';
+	//for (selectorString in uniqueSelectorValues) {
+	if (alphabetize) {
+		uniqueSelectors = uniqueSelectors.sort();
+	}
+	for (i=0, il=uniqueSelectors.length; i<il; i++) {
+		expanded += uniqueSelectors[i] + ' {\n' + uniqueSelectorValues[uniqueSelectors[i]] + '\n}\n';
+	}
+		
+	// show me!
+	$('converted').value = expanded;
+	
+	$('converted-size').innerHTML = expanded.length;
+
+}
+
+// from http://blog.stevenlevithan.com/archives/faster-trim-javascript
+function trim(str) {
+	var whitespace = ' \n\r\t\f\x0b\xa0\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u200b\u2028\u2029\u3000';
+	for (var i = 0; i < str.length; i++) {
+		if (whitespace.indexOf(str.charAt(i)) === -1) {
+			str = str.substring(i);
+			break;
+		}
+	}
+	for (i = str.length - 1; i >= 0; i--) {
+		if (whitespace.indexOf(str.charAt(i)) === -1) {
+			str = str.substring(0, i + 1);
+			break;
+		}
+	}
+	return whitespace.indexOf(str.charAt(0)) === -1 ? str : '';
+}
+</script>	
+</body>
+</html>
