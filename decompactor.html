@@ -35,9 +35,9 @@
 				<td>
 					<textarea id="original"></textarea>
 					<br/>
-					<span id="original-size"></span>					
+					<span id="original-size"></span>
 				</td>
-				<td>	
+				<td>
 					<input type="button" id="convert" value="Convert &gt;&gt;" />
 					<br />
 					<input type="checkbox" id="alphabetize" checked="checked" /><label for="alphabetize">Alphabetize</label>
@@ -52,7 +52,7 @@
 	</table>
 <script>
 
-var 
+var
 	selectorMatch = new RegExp(/([^{]+)\{([^}]+)}/gi),
 	$ = function(id) {
 		return document.getElementById(id);
@@ -63,36 +63,36 @@ $('original').onchange = function() {
 }
 
 $('convert').onclick = function() {
-	
-	var selectorBlocks, 
+
+	var selectorBlocks,
 		selectorBlock,
 		selectorBlockMatch,
-		selectorStrings, 
+		selectorStrings,
 		selectorString,
-		uniqueSelectors = [],	
-		uniqueSelectorValues = {},		
+		uniqueSelectors = [],
+		uniqueSelectorValues = {},
 		i,
 		il,
 		alphabetize = $('alphabetize').checked,
 		original = $('original').value,
 		expanded;
-	
+
 	// remove comments
 	expanded = original.replace(/\/\*[^\/\*]+\*\//gi, '');
 
-	
+
 	// go through each selector block
-	while ((selectorBlockMatch = selectorMatch.exec(expanded)) != null)  {  
+	while ((selectorBlockMatch = selectorMatch.exec(expanded)) != null)  {
 		selectorBlock = selectorBlockMatch[1];
 		values = '\t' + trim(selectorBlockMatch[2]);
-		
+
 		// split the block (html, body,) into unique selectors
 		selectorStrings = selectorBlock.split(',');
 		for (i=0, il=selectorStrings.length; i<il; i++) {
-		
-			// add the css properties from this block to the unique selector 
+
+			// add the css properties from this block to the unique selector
 			selectorString = trim(selectorStrings[i]);
-			
+
 			if (selectorString != '') {
 				if (uniqueSelectorValues[selectorString] != null) {
 					uniqueSelectorValues[selectorString] += '\n' + values;
@@ -102,8 +102,8 @@ $('convert').onclick = function() {
 				}
 			}
 		}
-	} 
-	
+	}
+
 	// build de-compacted version
 	expanded = '/* expanded version */\n\n';
 	//for (selectorString in uniqueSelectorValues) {
@@ -113,10 +113,10 @@ $('convert').onclick = function() {
 	for (i=0, il=uniqueSelectors.length; i<il; i++) {
 		expanded += uniqueSelectors[i] + ' {\n' + uniqueSelectorValues[uniqueSelectors[i]] + '\n}\n';
 	}
-		
+
 	// show me!
 	$('converted').value = expanded;
-	
+
 	$('converted-size').innerHTML = expanded.length;
 
 }
@@ -138,6 +138,6 @@ function trim(str) {
 	}
 	return whitespace.indexOf(str.charAt(0)) === -1 ? str : '';
 }
-</script>	
+</script>
 </body>
 </html>
